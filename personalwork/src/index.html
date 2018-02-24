@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>index.html</title>
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="description" content="">
+    <meta name="title" content="">
+    <link rel="stylesheet" href="http:////at.alicdn.com/t/font_437396_1d54kbl7vuzq6w29.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_437396_q81n1pntbysc3di.css">
+    <script data-mt-inline src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="flame"></div>
+    <!-- <script src="//g.alicdn.com/mtb/lib-flexible/0.3.2/flexible.js">
+      /* 页面采用rem单位 750分辨率标准  1rem = 37.5px */
+    </script> -->
+    <script>
+      var config = {
+        all: [
+          {
+            "homeImg":"https://img.alicdn.com/tfs/TB1n.BnayqAXuNjy1XdXXaYcVXa-956-389.jpg",
+            "homeTitle":"菜鸟联盟",
+            "homePresent":"菜鸟联盟是提升电商物流服务体验的组织，成立于2016年3月28日，由阿里巴巴三大战略业务板块之一的菜鸟网络牵头，联合国内外主要物流合作伙伴组建。",
+            "homeTime":"2017-11-12 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.alicdn.com/tfs/TB14d7ocH_I8KJjy1XaXXbsxpXa-900-504.jpg",
+            "homeTitle":"优酷——这世界很酷！！！",
+            "homePresent":"优酷现为阿里巴巴文化娱乐集团大优酷事业群下的视频平台，优酷引领文化娱乐产业的核心能力。",
+            "homeTime":"2017-11-13 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.alicdn.com/tfs/TB1NdoncLDH8KJjy1XcXXcpdXXa-480-360.jpg",
+            "homeTitle":"VUE",
+            "homePresent":"一套构建用户界面的渐进式框架，Vue 采用自底向上增量开发的设计，Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。",
+            "homeTime":"2017-11-12 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.alicdn.com/tfs/TB1gqL7cRfH8KJjy1XbXXbLdXXa-360-200.jpg",
+            "homeTitle":"阿里妈妈基于阿里大数据",
+            "homePresent":"是国内领先的大数据营销平台，拥有阿里巴巴集团的核心商业数据。",
+            "homeTime":"2017-11-13 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.alicdn.com/tfs/TB1BycncLDH8KJjy1XcXXcpdXXa-533-300.jpg",
+            "homeTitle":"游戏开发",
+            "homePresent":"游戏的开发更是对于脑部的觉醒，让你的思维不断飞跃，开启你的大脑吧",
+            "homeTime":"2017-11-13 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.alicdn.com/tfs/TB17wQhcS_I8KJjy0FoXXaFnVXa-600-263.jpg",
+            "homeTitle":"飞猪",
+            "homePresent":"飞猪，指为淘宝会员提供机票、酒店、旅游线路等商品的综合性旅游出行网络交易服务平台。",
+            "homeTime":"2017-11-12 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.alicdn.com/tfs/TB1h8I3cZrI8KJjy0FhXXbfnpXa-529-376.jpg",
+            "homeTitle":"TMS-淘宝",
+            "homePresent":"TMS的淘宝页的功能点，以及相关的介绍，效果展示等等。MS的淘宝页的功能点，以及相关的介绍，效果展示等等MS的淘宝页的功能点，以及相关的介绍，效果展示等等MS的淘宝页的功能点，以及相关的介绍，效果展示等等MS的淘宝页的功能点，以及相关的介绍，效果展示等等",
+            "homeTime":"上传时间 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.qianduanmei.com/2017/11/07/294931027423779.jpg",
+            "homeTitle":"TMS-淘宝标题",
+            "homePresent":"TMS的淘宝页的功能点，以及相关的介绍，效果展示等等。",
+            "homeTime":"上传时间 --经典网页设计"
+          },
+          {
+            "homeImg":"https://img.qianduanmei.com/2017/11/07/294931027423779.jpg",
+            "homeTitle":"TMS-淘宝标题",
+            "homePresent":"TMS的淘宝页的功能点，以及相关的介绍，效果展示等等。",
+            "homeTime":"上传时间 --经典网页设计"
+          }
+        ],
+        secondPage: [
+          {allLun:[
+            {
+              "secondTitle": "例子1",
+              "time": "2017年11月9日",
+              "littleTitle": "vue小demo",
+              "introduce": "vue的v-for循环",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Josh-Laravel-Admin-Template-Front-End-CRUD.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            },
+            {
+              "secondTitle": "例子2",
+              "time": "2017年11月9日",
+              "littleTitle": "vue路由",
+              "introduce": "vue的路由和子路由",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Chandra-Laravel-Admin-UI-Kit.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            },
+            {
+              "secondTitle": "例子3",
+              "time": "2017年11月9日",
+              "littleTitle": "vue小demo",
+              "introduce": "vue的v-for循环",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Josh-Laravel-Admin-Template-Front-End-CRUD.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            }
+          ]},
+          {allLun:[
+            {
+              "secondTitle": "例子4",
+              "time": "2017年11月9日",
+              "littleTitle": "vue小demo",
+              "introduce": "vue的v-for循环",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Josh-Laravel-Admin-Template-Front-End-CRUD.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            },
+            {
+              "secondTitle": "例子5",
+              "time": "2017年11月9日",
+              "littleTitle": "vue路由",
+              "introduce": "vue的路由和子路由",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Chandra-Laravel-Admin-UI-Kit.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            }
+          ]},
+          {allLun:[
+            {
+              "secondTitle": "例子6",
+              "time": "2017年11月9日",
+              "littleTitle": "vue小demo",
+              "introduce": "vue的v-for循环",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Josh-Laravel-Admin-Template-Front-End-CRUD.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            },
+            {
+              "secondTitle": "例子7",
+              "time": "2017年11月9日",
+              "littleTitle": "vue路由",
+              "introduce": "vue的路由和子路由",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Chandra-Laravel-Admin-UI-Kit.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            }
+          ]},
+          {allLun:[
+            {
+              "secondTitle": "例子1",
+              "time": "2017年11月9日",
+              "littleTitle": "vue小demo",
+              "introduce": "vue的v-for循环",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Josh-Laravel-Admin-Template-Front-End-CRUD.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            },
+            {
+              "secondTitle": "例子2",
+              "time": "2017年11月9日",
+              "littleTitle": "vue路由",
+              "introduce": "vue的路由和子路由",
+              "shareLink": "https://segmentfault.com/q/1010000007522195?_ea=1372074",
+              "introduceImg": "https://img.qianduanmei.com/2017/11/07/Chandra-Laravel-Admin-UI-Kit.jpg",
+              comment: [
+                {
+                  name: "有毒的黄同学",
+                  time: "2017-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: [
+                    {
+                      responder: "有毒的黄同学",
+                      reviewers: "傲娇的",
+                      time: "2017-09-03",
+                      content: "你说得对"
+                    },
+                    {
+                      responder: "傲娇的",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-05",
+                      content: "很强"
+                    },
+                    {
+                      responder: "凳字",
+                      reviewers: "有毒的黄同学",
+                      time: "2017-09-15",
+                      content: "很强"
+                    }
+                  ]
+                },
+                {
+                  name: "Freedom小黄",
+                  time: "2016-08-17",
+                  content: "好,讲得非常好，good",
+                  reply: []
+                }
+              ]
+            }
+          ]}
+        ]
+        
+      }  
+    </script>
+  </body>
+</html>
