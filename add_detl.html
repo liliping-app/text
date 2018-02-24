@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add, remove,create, clone</title>
+</head>
+<body>
+  <input type="button" id="Button1" value="创建节点" onclick="CreateNode();"/><br/>
+  <input type="button" id="Button2" value="替换节点" onclick="ReplaceNode();"/><br/>
+  <input type="button" id="Button3" value="删除节点" onclick="RemoveNode();"/><br/>
+  <script>
+    function CreateNode() {
+      var pnode = document.createElement('p');
+      var tnode = document.createTextNode('烟花三月下扬州');
+      pnode.appendChild(tnode);
+      document.body.appendChild(pnode);
+    }
+    function ReplaceNode() {
+      var pnode = document.createElement('p');
+      var tnode = document.createTextNode('故人西辞黄鹤楼');
+      pnode.appendChild(tnode);
+      //获取要替换的p节点
+      var oldnode = document.getElementsByTagName('p')[0];
+      oldnode.replaceNode(pnode, oldnode);//此种方法只支持IE
+      //oldnode.parentNode.replaceChild(pnode, oldnode);//通用的
+    }
+    function RemoveNode() {
+      var oldnode = document.getElementsByTagName('p')[0];
+      //oldnode.parentNode返回的是p节点的父节点，这里就是body，然后使用body节点的removeChild方法删除其虾米那的pnode节点
+      oldnode.parentNode.removeChild(oldnode);
+    }
+  </script>
+</body>
+</html>
