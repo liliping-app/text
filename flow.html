@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6与canvas实现鼠标小球跟随效果</title>
+    <style>
+      body {
+        margin: 90px;
+      }
+      #canvas {
+        box-shadow: 0 0 5px;
+      }
+    </style>
+</head>
+<body>
+  <canvas id="canvas">当前浏览器不支持！</canvas>
+  <script>
+    const canvas = document.getElementById('canvas');
+    canvas.height = 600;
+    canvas.width = 1000;
+    canvas.style.backgroundColor = '#000';
+    const ctx = canvas.getContext('2d');
+    //小球
+    class Ball {
+      constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        //小球半径默认 40
+        this.r = 40;
+      }
+      //绘制小球
+      render() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+    //移动小球
+    class MoveBall extends Ball {
+      constructor(x, y, color) {
+        super(x, y, color);
+        this.dX = Math.floor(Math.random() * 5 + 1);
+        this.dY = Math.floor(Math.random() * 5 + 1);
+        this.dR = Math.floor(Math.random() * 5 + 1);
+      }
+      upData() {
+        this.x += this.dX;
+        this.y += this.dY;
+        this.r -= this.dR;
+        if(this.r < 0) {
+          this.r = 0;
+        }
+      }
+    }
+    let ballArray = [];
+    let colorArray = ['red', 'green', 'pink', 'yellow', 'blue', 'purple', 'cerulean', 'cyan'];
+    canvas.addEventListener('mousemove', function (e) {
+      ballArray.push(new MoveBall(e.offsetX, e.offsetY, colorArray[Math.floor(Math.random() * 8)]));
+
+    })
+    setInterval(function () {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < ballArray.length; i ++) {
+        ballArray[i].render();
+        ballArray[i].upData();
+      }
+    }, 50);
+  </script>
+</body>
+</html>
